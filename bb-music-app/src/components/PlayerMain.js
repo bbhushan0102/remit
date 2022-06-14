@@ -1,26 +1,10 @@
 import { useEffect, useState } from "react";
 import Player from "./Player";
+import data from './data'
 
-function Main () {
+function PlayerMain () {
 
-    const [songs]= useState ([{
-
-        title: "song1",
-        artist: "Bharat",
-        img_src:"./song_images/Beauty_Cover (front)_e.jpg",
-        src:"./songs/Beauty.mp3"
-
-    },
-    {
-        title: "song2",
-        artist: "Vera",
-        img_src:"./song_images/Feblu_Cover (front)_e.jpg",
-        src:"./songs/Feblu.mp3"
-    }
-
-       
-    ])
-
+    const [songs, setSongs] = useState(data());
     const [currentSongIndex, setCurrentSongIndex] = useState(0);
     const [nextSongIndex, setNextSongIndex] = useState(0);
 
@@ -46,4 +30,4 @@ function Main () {
     )
 
 }
-export default Main;
+export default PlayerMain;

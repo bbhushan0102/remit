@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 // import Player from './components/Player';
-import Main from './components/Main';
+import PlayerMain from './components/PlayerMain';
 import Search from './components/Search';
 import Sidebar from './components/Sidebar'
 
@@ -12,7 +12,7 @@ function App() {
       {/* <header className="App-header"> */}
       <Sidebar />
         <span>
-         <Main />
+         <PlayerMain />
        </span>
        {/* <Search/> */}
     </div>

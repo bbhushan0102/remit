@@ -1,9 +1,7 @@
 .sidebar_container {
-    width:16vmax;
-    height: 38vmax;
-    background-color: rgb(230, 186, 186);
-    /* position: absolute; */
-  left: 150px;
-  
-  border: 3px solid green;
+  grid-area: sidebar;
+  padding: 50px 32px;
+  background: var(--background-accent-color);
+  min-width: 150px;
+  max-width: 200px;
 }

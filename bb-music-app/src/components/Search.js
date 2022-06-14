@@ -8,7 +8,7 @@ function Search() {
     axios
       .get("https://itunes.apple.com/us/rss/topalbums/limit=10/json")
       .then(data => {
-        setMusic(data.data.feed.entry);
+        setMusic(data.data.feed.entry).slice(5);
       })
       .catch(err => console.log(err));
   }, []);
@@ -40,7 +40,7 @@ function Search() {
                     Album Name: {Music["im:name"].label}
                   </h3>
                   <img
-                    src={Music["im:image"][2].label}
+                    // src={Music["im:image"][2].label}
                     alt={Music["im:name"].label}
                   />
                   <h4 className="title">Artist: {Music["im:artist"].label}</h4>
