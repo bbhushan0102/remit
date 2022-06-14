@@ -1,7 +1,7 @@
 import react, { useEffect, useRef, useState } from 'react'
 import Details from './Details';
 import Controls from './Controls';
-import { faForward } from '@fortawesome/free-solid-svg-icons';
+
 
 
 function Player(props) {
@@ -19,32 +19,27 @@ function Player(props) {
      const skipSong = (forwards = true) => {
         if (forwards) {
             props.setCurrentSongIndex(() => {
-              let temp = props.currentSongIndex;
-              temp++;
+              let index = props.currentSongIndex;
+              index++;
       
-              if (temp > props.songs.length - 1) {
-                temp = 0;
+              if (index > props.songs.length - 1) {
+                index = 0;
               }
-      
-              return temp;
+              return index;
             });
-          } else {
-            props.setCurrentSongIndex(()=>{
-                let temp = props.currentSongIndex;
-        temp--;
-
-        if (temp < 0) {
-          temp = props.songs.length - 1;
-        }
-
-        return temp;
+        } else {
+                props.setCurrentSongIndex(()=>{
+                    let index = props.currentSongIndex;
+                    index--;
+                    if (index < 0) {
+                        index = props.songs.length - 1;
+            }   
+                return index;
             })
-          }
+        }
      }
     return (
         <div>
-            <h3 className='player'>Plying now</h3>
-
             <div>
             <Details 
             song = {props.songs[props.currentSongIndex]}
@@ -56,6 +51,7 @@ function Player(props) {
                 isPlaying = { isPlaying}
                 setIsPlaying = {setIsPlaying}
                 skipSong = {skipSong}
+                shuffle = {props.songs}
                 
                 
                 />
@@ -67,13 +63,20 @@ function Player(props) {
             >
             </audio>
             <p>
-                    Next Up:
+                    Next Song:
                     <span>
                         { props.songs [props.nextSongIndex].title} by { " "} 
                         { props.songs [props.nextSongIndex].artist}
                         Next Song
                     </span>
                 </p>
+            <p>
+                Songs List:
+                <span>
+                    {props.songs.length}
+                    
+                </span>
+            </p>
             
         </div>
 

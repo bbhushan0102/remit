@@ -3,7 +3,7 @@ import Player from "./Player";
 
 function Main () {
 
-    const [songs]=useState ([ {
+    const [songs]= useState ([{
 
         title: "song1",
         artist: "Bharat",
@@ -24,15 +24,6 @@ function Main () {
     const [currentSongIndex, setCurrentSongIndex] = useState(0);
     const [nextSongIndex, setNextSongIndex] = useState(0);
 
-    // useEffect(()=>{
-    //     if(currentSongIndex+1>songs.length -1) {
-    //         return 0
-    //     }
-    //     else {
-    //         return currentSongIndex +1
-    //     }
-    // },[currentSongIndex, songs.length])
-
     useEffect(()=>{
         setNextSongIndex(()=>{
         if (currentSongIndex + 1 >songs.length - 1 ){
@@ -44,7 +35,7 @@ function Main () {
       },[currentSongIndex])
 
     return (
-        <div class="player">
+        <div className="player">
             <Player 
             currentSongIndex= {currentSongIndex}
             setCurrentSongIndex = { setCurrentSongIndex }

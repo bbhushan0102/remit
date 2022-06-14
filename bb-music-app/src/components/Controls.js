@@ -7,25 +7,30 @@ import {
   faPause,
   faForward,
   faBackward,
+  faShuffle,
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Controls (props) {
-
     return (
-        <div className="control">
+        <div className="controls">
             <button className='control_SkipButton' onClick = {()=> props.skipSong(false)}>
                 <FontAwesomeIcon icon = { faBackward } />
             </button>
-            <button className="play-btn" onClick={() => props.setIsPlaying(!props.isPlaying)} >
+            <button className="control_playButton" onClick={() => props.setIsPlaying(!props.isPlaying)} >
                 <FontAwesomeIcon icon={props.isPlaying ? faPause : faPlay} />
             </button>
             
             <button className='control_SkipButton' onClick={()=> props.skipSong()}>
                 <FontAwesomeIcon icon = { faForward } />
             </button>
-
-
+            
+            <button className='control_ShuffleButton' >
+                <FontAwesomeIcon icon = { faShuffle } />
+            </button>
         </div>
+       
+        
     )
 }
 export default  Controls;
