@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Player from "./Player";
-import data from './data'
+import data from '../data'
 
 function PlayerMain () {
 

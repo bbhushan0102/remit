@@ -1,0 +1,12 @@
+.content_container
+{
+    width:calc(100% - 200px);
+    height:100vmax;
+    padding: 20px;
+    background: grey;
+   border-bottom: calc(200px) ;
+    margin-left: calc(200px);
+
+
+}
+

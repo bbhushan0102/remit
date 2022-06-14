@@ -1,5 +1,14 @@
 
-.App {
+.musicPlayer {
+  display:flex;
+  /* border-radius:30px; */
+  height: 100;
+  width:100;
+  color: white;
+  position: relative;
+}
+
+/* .App {
   display:flex;
   align-items: center;
   justify-content: center;
@@ -7,10 +16,10 @@
   height: 100;
   width:100;
   background-color: black;
-}
+} */
 
 /* CSS for Player components */
-.player {
+/* .player {
   display: block;
   background-image: linear-gradient(to bottom, blue, pink);
   margin:0px auto;
@@ -18,8 +27,8 @@
   border-radius: 16px;
   box-shadow: inset -3px -3px 3px rgba(195,126,34,1),
   inset -5px -5px 5px rgba(225,126,34,1);
-}
-.App-header {
+} */
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -30,7 +39,7 @@
   color: white;
 }
 
-/* copy paste job */
+
 .player .h3 {
   color: #c4125c;
   text-shadow: 2px 2px #510202;
@@ -55,12 +64,12 @@
   font-size: 14px;
   font-weight: 550;
   text-align: center;
-}
+} */
 
 
 /* Details Components */
 
-.details .details-img {
+/* .details .details-img {
   position: relative;
   width: fit-content;
   margin: 30px auto;
@@ -102,11 +111,11 @@
   text-shadow: 2px 2px 4px rgba(232, 221, 221, 0.8);
   text-align: center;
   margin-bottom: 20px;
-}
+} */
 
 /* Controls Components  */
 
-.controls {
+/* .controls {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,13 +167,13 @@
 
 .controls_SkipButton:hover {
   transform: scale(1.5);
-}
+} */
 
 
 
 /* Details Components */
 
-.nextsong-details {
+/* .nextsong-details {
   display: flex;
   flex-direction: row;
   padding: 1px;
@@ -186,5 +195,5 @@
   align-items: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
     -2px -2px 4px rgba(129, 129, 129, 0.4);
-}
+} */
 
