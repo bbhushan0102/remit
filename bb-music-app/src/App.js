@@ -17,7 +17,7 @@ function App() {
 
 <BrowserRouter>
   <Switch>
-    <Route exact path="/" component={PlayerMain} />
+    <Route exact path="/Player" component={PlayerMain} />
     <Route exact path="/search" component={Search} />
   </Switch>
 </BrowserRouter>

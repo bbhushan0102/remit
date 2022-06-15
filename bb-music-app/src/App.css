@@ -2,24 +2,26 @@
 .musicPlayer {
   display:flex;
   /* border-radius:30px; */
-  height: 100;
-  width:100;
+  height: 900;
+  width:150;
   color: white;
   position: relative;
 }
 
-/* .App {
+.App {
   display:flex;
   align-items: center;
   justify-content: center;
   border-radius:30px;
-  height: 100;
-  width:100;
-  background-color: black;
-} */
+  margin-top: calc(100%-300px);
+  margin-left: calc(100%-300px);
+  margin-bottom: calc(100%-200px);
+
+  background-color: rgb(139, 58, 58);
+}
 
 /* CSS for Player components */
-/* .player {
+.player {
   display: block;
   background-image: linear-gradient(to bottom, blue, pink);
   margin:0px auto;
@@ -27,7 +29,7 @@
   border-radius: 16px;
   box-shadow: inset -3px -3px 3px rgba(195,126,34,1),
   inset -5px -5px 5px rgba(225,126,34,1);
-} */
+}
 /* .App-header {
   background-color: #282c34;
   min-height: 100vh;
