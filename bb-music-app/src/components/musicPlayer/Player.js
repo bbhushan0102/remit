@@ -1,6 +1,7 @@
 import react, { useEffect, useRef, useState } from 'react'
 import Details from './Details';
 import Controls from './Controls';
+import '../../App'
 
 
 
@@ -11,12 +12,13 @@ function Player(props) {
     useEffect(() => {
         if (isPlaying) {
             audioEI.current.play()
-        } else {
+        } 
+        else {
             audioEI.current.pause()
         }
         
     })
-     const skipSong = (forwards = true) => {
+    const skipSong = (forwards = true) => {
         if (forwards) {
             props.setCurrentSongIndex(() => {
               let index = props.currentSongIndex;
@@ -37,8 +39,17 @@ function Player(props) {
                 return index;
             })
         }
-     }
+        
+    }
+    const shuffle = () => {
+            props.setCurrentSongIndex(() => {
+              let index = props.currentSongIndex;
+              return Math.floor(Math.random() * index)
+            })
+    }
+    
     return (
+        
         <div>
             <div>
             <Details 
@@ -51,7 +62,8 @@ function Player(props) {
                 isPlaying = { isPlaying}
                 setIsPlaying = {setIsPlaying}
                 skipSong = {skipSong}
-                shuffle = {props.songs}
+                shuffle={ shuffle }
+               
                 
                 
                 />
@@ -62,9 +74,10 @@ function Player(props) {
                 ref={ audioEI}
             >
             </audio>
-            <p>
+            
+            {/* <p className='nextsong-details'>
                     Next Song:
-                    <span>
+                    <span className='nextsong-details'>
                         { props.songs [props.nextSongIndex].title} by { " "} 
                         { props.songs [props.nextSongIndex].artist}
                         Next Song
@@ -72,11 +85,11 @@ function Player(props) {
                 </p>
             <p>
                 Songs List:
-                <span>
+                <span className='nextsong-details'>
                     {props.songs.length}
                     
                 </span>
-            </p>
+            </p> */}
             
         </div>
 

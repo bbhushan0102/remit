@@ -1,5 +1,5 @@
 import react from 'react'
-
+import '../../App'
 
 
 import React from "react";
@@ -14,6 +14,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Controls (props) {
+    console.log(props.skipSong)
+    console.log(props.demo)
     return (
         <div className="controls">
             <button className='control_SkipButton' onClick = {()=> props.skipSong(false)}>
@@ -27,7 +29,7 @@ function Controls (props) {
                 <FontAwesomeIcon icon = { faForward } />
             </button>
             
-            <button className='control_ShuffleButton' >
+            <button className='control_ShuffleButton' onClick={()=>props.shuffle()} >
                 <FontAwesomeIcon icon = { faShuffle } />
             </button>
         </div>
