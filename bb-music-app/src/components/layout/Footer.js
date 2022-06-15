@@ -4,7 +4,7 @@ import '../../css/footer.css'
 function Footer (){
     return (
         <div className='footer_container'>
-            <h2> Footer component</h2>
+            <h2> Battery Safe Mode On</h2>
 
         </div>
     )

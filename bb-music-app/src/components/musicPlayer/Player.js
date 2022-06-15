@@ -109,7 +109,10 @@ function Player(props) {
                 <FontAwesomeIcon icon = { faSearch } /> {" "} Search
             </button>
              </Link>
+             { " "}
              <button onClick={themeToggler}>Switch Theme</button>
+             {" "}
+             <button > Add Playlist </button>
             
         </div>
         </>

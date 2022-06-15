@@ -33,7 +33,7 @@ function Sidebar ({props}) {
     }
     return (
         <div className='sidebar_container'>
-            <h2>sidebar</h2>
+            <h2>Battery safe mode on</h2>
             <img src = {logo} className="img"/>
             <ul>
                 {
