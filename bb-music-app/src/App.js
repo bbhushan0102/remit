@@ -8,6 +8,7 @@ import Contentbar from './components/layout/Contentbar';
 import Footer from './components/layout/Footer';
 import Header from './components/layout/Header';
 import Search from './components/musicPlayer/Search';
+import TrackList from './components/musicPlayer/TrackList';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={PlayerMain} />
           <Route exact path="/search" component={Search} />
+          <Route exact path="/tracklist" component={TrackList} />
         </Switch>
       </BrowserRouter>
       <Sidebar>

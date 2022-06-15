@@ -104,15 +104,20 @@ function Player(props) {
                     
                 </span>
             </p> */}
+
             <Link to='/search'>
-            <button className='control_ShuffleButton' onClick={()=>props.shuffle()} >
+            <button className='control_faSearch' >
                 <FontAwesomeIcon icon = { faSearch } /> {" "} Search
             </button>
              </Link>
+
+
              { " "}
              <button onClick={themeToggler}>Switch Theme</button>
              {" "}
-             <button > Add Playlist </button>
+             <Link to ='/tracklist'>
+                <button className='details'>Track List</button>
+             </Link>
             
         </div>
         </>
