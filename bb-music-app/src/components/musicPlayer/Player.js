@@ -7,11 +7,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 
+import {ThemeProvider} from "styled-components";
+import { GlobalStyles } from "../theme/GlobalStyle";
+import { lightTheme, darkTheme } from "../theme/Themes"
+
 
 function Player(props) {
 
     const audioEI = useRef(null)
     const [isPlaying, setIsPlaying] = useState (false)
+
+    const [theme, setTheme] = useState('light');
+    const themeToggler = () => {
+        theme === 'light' ? setTheme('dark') : setTheme('light')
+    }
+
     useEffect(() => {
         if (isPlaying) {
             audioEI.current.play()
@@ -52,6 +62,10 @@ function Player(props) {
     }
     
     return (
+
+        <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+        <>
+        <GlobalStyles/>
         
         <div>
             <div>
@@ -66,9 +80,6 @@ function Player(props) {
                 setIsPlaying = {setIsPlaying}
                 skipSong = {skipSong}
                 shuffle={ shuffle }
-               
-                
-                
                 />
             </div>
             <audio className='player_audio'
@@ -97,10 +108,12 @@ function Player(props) {
             <button className='control_ShuffleButton' onClick={()=>props.shuffle()} >
                 <FontAwesomeIcon icon = { faSearch } /> {" "} Search
             </button>
-            
              </Link>
+             <button onClick={themeToggler}>Switch Theme</button>
             
         </div>
+        </>
+    </ThemeProvider>
 
     )
    
