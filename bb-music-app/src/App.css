@@ -69,13 +69,17 @@
 
 /* Details Components */
 
-/* .details .details-img {
+.navbar-item {
+ 
+}
+
+.details .details-img {
   position: relative;
   width: fit-content;
   margin: 30px auto;
 }
 
-.music-player--details .details-img img {
+.details .details_image img {
   display: block;
   margin: 0px auto;
   width: 100%;
@@ -111,11 +115,11 @@
   text-shadow: 2px 2px 4px rgba(232, 221, 221, 0.8);
   text-align: center;
   margin-bottom: 20px;
-} */
+}
 
 /* Controls Components  */
 
-/* .controls {
+.controls {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,7 +151,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  color: white;
+  /* color: #fff; */
   font-size: 38px;
   transition: all 0.4s;
 }
@@ -160,20 +164,20 @@
   border: none;
   outline: none;
   cursor: pointer;
-  color: white;
+  /* color: white; */
   font-size: 38px;
   transition: all 0.4s;
 }
 
 .controls_SkipButton:hover {
   transform: scale(1.5);
-} */
+}
 
 
 
 /* Details Components */
 
-/* .nextsong-details {
+.nextsong-details {
   display: flex;
   flex-direction: row;
   padding: 1px;
@@ -195,5 +199,5 @@
   align-items: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
     -2px -2px 4px rgba(129, 129, 129, 0.4);
-} */
+}
 
