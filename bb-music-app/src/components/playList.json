@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "title": "$orries",
+        "artist": "Peachy!",
+        "album": " Shiloh",
+        "track": "$orries",
+        "year": "1",
+        "img_src": "./songs_images/$orries_Cover (front)_e.jpg",
+        "src": "https://www.shazam.com/track/40333609/river-flows-in-you"
+    },
+    {
+        "id":2,
+        "title": "[oops]",
+        "artist": "potsu",
+        "album": "[oops]",
+        "track": "1",
+        "year": "",
+        "img_src": "./songs_images/[oops]_Cover (front)_e.jpg",
+        "src": "https://www.shazam.com/track/40333609/river-flows-in-you"
+    },
+    {
+        "id":3,
+        "title": "5:32pm",
+        "artist": "The Deli",
+        "album": "Vibes 2",
+        "track": "12",
+        "year": "",
+        "img_src": "./songs_images/5 32pm_Cover (front)_e.jpg",
+        "src": "./songs/5 32pm.mp3"
+    },
+    {
+        "id":4,
+        "title": "88 Keys",
+        "artist": "Oatmello",
+        "album": "Snapshots",
+        "track": "3",
+        "year": "",
+        "img_src": "./songs_images/88 Keys_Cover (front)_e.jpg",
+        "src": "./songs/88 Keys.mp3"
+    },
+    {
+        "id":5,
+        "title": "Affection",
+        "artist": "Jinsang",
+        "album": "Life",
+        "track": "15",
+        "year": "",
+        "img_src": "./songs_images/Affection_Cover (front)_e.jpg ",
+        "src": "./songs/Affection.mp3"
+    }
+]

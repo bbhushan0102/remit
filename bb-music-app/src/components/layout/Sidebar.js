@@ -27,7 +27,7 @@ function Sidebar ({props}) {
         setState({
             ...state,
             modal:false,
-            playlists: { ...state.playlists, [list]:new setSet()
+            playlists: { ...state.playlists, [list]:new Set()
             }
         })
     }

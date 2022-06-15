@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faTimes} from "@fortawesome/free-solid-svg-icons";
 
 function Modal ( {children, show, close}){
-    // if (!show) return null
+    if (!show) return null
     return (
         <div className='modal'>
             <div className='modal_content'>
