@@ -28,7 +28,13 @@ function Search() {
 
   return (
     <div>
-      <input onChange={handleSearch} placeHolder={"search title, artist"} />
+
+      <div class="box">
+      <input class="input" id="search_input"  placeHolder={"search title, artist"} onChange={handleSearch}/> 
+      <i class="fas fa-search"></i>
+      </div>
+      
+
       <article className="albums">
         <ul className="album-items">
           {filtered.map(Music => {
