@@ -28,6 +28,7 @@ Install following dependencies
 ### `npm i --save @fortawesome/react-fontawesome` 
 ### `npm i --save @fortawesome/free-solid-svg-icons`
 ### `npm i --save @fortawesome/fontawesome-svg-core`
-### `npm install -S react-router-dom`not working and not used
+### `npm install -S react-router-dom`
 ### `npm install axios`
+### `npm i styled-components  `
 
