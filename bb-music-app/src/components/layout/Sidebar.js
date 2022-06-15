@@ -62,7 +62,7 @@ function Sidebar ({props}) {
 
              
                 <Modal 
-                    Show={state.modal} 
+                    show={state.modal} 
                     close={() => {
                     setState({ ...state, modal: false })
                 }}>
