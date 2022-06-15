@@ -1,7 +1,10 @@
 import react, { useEffect, useRef, useState } from 'react'
 import Details from './Details';
 import Controls from './Controls';
-import '../../App'
+import '../../App';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -90,6 +93,12 @@ function Player(props) {
                     
                 </span>
             </p> */}
+            <Link to='/search'>
+            <button className='control_ShuffleButton' onClick={()=>props.shuffle()} >
+                <FontAwesomeIcon icon = { faSearch } /> {" "} Search
+            </button>
+            
+             </Link>
             
         </div>
 
