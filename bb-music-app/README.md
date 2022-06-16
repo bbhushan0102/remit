@@ -23,6 +23,9 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run build`
 
+### Add following link to the index.html
+`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>`
+
 ### `dependencies`
 Install following dependencies 
 ### `npm i --save @fortawesome/react-fontawesome` 
@@ -30,5 +33,5 @@ Install following dependencies
 ### `npm i --save @fortawesome/fontawesome-svg-core`
 ### `npm install -S react-router-dom`
 ### `npm install axios`
-### `npm i styled-components  `
+### `npm i styled-components`
 
