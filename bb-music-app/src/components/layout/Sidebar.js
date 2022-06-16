@@ -5,14 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faPlusCircle} from "@fortawesome/free-solid-svg-icons";
 import Modal from './Modal';
 
+
 function Sidebar ({props}) {
 
     const [state, setState] = useState({
-        currentPlayList: 'home',
+        currentPlayList: 'Library',
         modal: false,
 
         playlists: {
-            home: new Set(),
+            Library: new Set(),
             favourite: new Set(),
         }
     })
@@ -36,6 +37,9 @@ function Sidebar ({props}) {
             <h2>Battery safe mode on</h2>
             <img src = {logo} className="img"/>
             <ul>
+               <li>Home</li>
+                <li>Search</li>
+                <li>Track List</li>
                 {
                     playlists.map(list =>(
                         <li 
