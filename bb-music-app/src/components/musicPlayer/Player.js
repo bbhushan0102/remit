@@ -4,7 +4,7 @@ import Controls from './Controls';
 import '../../App';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faHourglass } from "@fortawesome/free-solid-svg-icons";
 
 
 import {ThemeProvider} from "styled-components";
@@ -113,7 +113,9 @@ function Player(props) {
 
 
              { " "}
-             <button onClick={themeToggler}>Switch Theme</button>
+             <button onClick={themeToggler}>Timer {" "}
+             <FontAwesomeIcon icon = { faHourglass } />
+             </button>
              {" "}
              <Link to ='/tracklist'>
                 <button className='details'>Track List</button>
