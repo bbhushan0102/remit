@@ -31,7 +31,7 @@ function Search() {
 
       <div class="box">
       <input class="input" id="search_input"  placeHolder={"search title, artist"} onChange={handleSearch}/> 
-      <i class="fas fa-search"></i>
+      {/* <i class="fa fa-search"></i> */}
       </div>
       
 
@@ -46,7 +46,7 @@ function Search() {
                     Album Name: {Music["im:name"].label}
                   </h3>
                   <img
-                    // src={Music["im:image"][2].label}
+                    src={Music["im:image"][2].label}
                     alt={Music["im:name"].label}
                   />
                   <h4 className="title">Artist: {Music["im:artist"].label}</h4>
