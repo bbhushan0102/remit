@@ -104,6 +104,7 @@ function Player(props) {
                     
                 </span>
             </p> */}
+            <p>Demo</p>
 
             <Link to='/search'>
             <button className='control_faSearch' >
